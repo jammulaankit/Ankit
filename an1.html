@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chai Cigar</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, sans-serif;
+}
+
+body{
+background:#fff8f0;
+color:#333;
+}
+
+header{
+background:#3b1f0e;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:28px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+height:90vh;
+background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+url("https://images.unsplash.com/photo-1511920170033-f8396924c348");
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero h2{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+background:#e67e22;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+color:#3b1f0e;
+}
+
+/* Menu */
+
+.menu{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+}
+
+.menu-item{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.menu-item h3{
+margin-bottom:10px;
+}
+
+.price{
+color:#e67e22;
+font-weight:bold;
+}
+
+/* Testimonials */
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.testimonial{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* About */
+
+.about{
+display:flex;
+flex-wrap:wrap;
+gap:30px;
+align-items:center;
+}
+
+.about img{
+width:400px;
+border-radius:10px;
+}
+
+.about-text{
+flex:1;
+}
+
+/* Contact */
+
+.contact form{
+display:flex;
+flex-direction:column;
+max-width:500px;
+margin:auto;
+}
+
+.contact input,
+.contact textarea{
+padding:12px;
+margin-bottom:15px;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+.contact button{
+padding:12px;
+background:#e67e22;
+border:none;
+color:white;
+font-size:16px;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+background:#3b1f0e;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Chai Cigar</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<div>
+<h2>Welcome to Chai Cigar</h2>
+<p>Where Every Sip Feels Like Home</p>
+<button>Explore Menu</button>
+</div>
+</section>
+
+<section id="menu">
+<h2 class="section-title">Our Menu</h2>
+
+<div class="menu">
+
+<div class="menu-item">
+<h3>Masala Chai</h3>
+<p class="price">₹20</p>
+</div>
+
+<div class="menu-item">
+<h3>Ginger Chai</h3>
+<p class="price">₹25</p>
+</div>
+
+<div class="menu-item">
+<h3>Elaichi Chai</h3>
+<p class="price">₹25</p>
+</div>
+
+<div class="menu-item">
+<h3>Cutting Chai</h3>
+<p class="price">₹15</p>
+</div>
+
+<div class="menu-item">
+<h3>Bun Maska</h3>
+<p class="price">₹30</p>
+</div>
+
+<div class="menu-item">
+<h3>Veg Puff</h3>
+<p class="price">₹35</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2 class="section-title">What Our Customers Say</h2>
+
+<div class="testimonials">
+
+<div class="testimonial">
+<p>"Best chai in the city! Perfect taste and great vibe."</p>
+<strong>- Rahul</strong>
+</div>
+
+<div class="testimonial">
+<p>"Chai Cigar is my daily evening stop. Love the masala chai!"</p>
+<strong>- Priya</strong>
+</div>
+
+<div class="testimonial">
+<p>"Amazing chai and snacks. Highly recommended."</p>
+<strong>- Arjun</strong>
+</div>
+
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+
+<div class="about-text">
+<p>
+Chai Cigar is more than just a chai café. It's a place where friends meet,
+conversations flow, and every cup of chai tells a story. We use fresh
+ingredients and traditional recipes to give you the perfect chai experience.
+</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2 class="section-title">Contact Us</h2>
+
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="5" placeholder="Your Message"></textarea>
+<button type="submit">Send Message</button>
+</form>
+
+</section>
+
+<footer>
+<p>© 2026 Chai Cigar | Made with ❤️ for Chai Lovers</p>
+</footer>
+
+</body>
+</html>
